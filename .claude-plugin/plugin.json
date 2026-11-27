@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Дослідження в Google NotebookLM однією командою: завантаження тек/Drive/URL, промпти в «Налаштування чату», Deep Research, результат у DOCX.",
   "author": { "name": "teraxis" },
-  "homepage": "https://github.com/teraxis/notebooklm-pipeline",
-  "repository": "https://github.com/teraxis/notebooklm-pipeline",
+  "homepage": "https://github.com/teraxis/discovery",
+  "repository": "https://github.com/teraxis/discovery",
   "license": "MIT",
   "keywords": ["notebooklm", "research", "docx", "ukrainian"]
 }

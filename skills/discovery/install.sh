@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# Встановлення notebooklm-pipeline (macOS / Linux). Повторний запуск безпечний.
+# Встановлення discovery (macOS / Linux). Повторний запуск безпечний.
 set -e
 HERE="$(cd "$(dirname "$0")" && pwd)"
 NLM_HOME="${NLM_HOME:-$HOME/.nlm-pipeline}"

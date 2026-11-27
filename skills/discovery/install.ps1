@@ -1,4 +1,4 @@
-﻿# Встановлення notebooklm-pipeline (Windows). Повторний запуск безпечний (оновлює залежності).
+﻿# Встановлення discovery (Windows). Повторний запуск безпечний (оновлює залежності).
 # Використання: powershell -ExecutionPolicy Bypass -File install.ps1
 $ErrorActionPreference = "Stop"
 $Here = Split-Path -Parent $MyInvocation.MyCommand.Path

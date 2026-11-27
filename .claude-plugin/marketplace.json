@@ -1,5 +1,5 @@
 {
-  "name": "notebooklm-pipeline",
+  "name": "discovery",
   "owner": { "name": "teraxis" },
   "metadata": { "description": "Дослідження в Google NotebookLM однією командою" },
   "plugins": [

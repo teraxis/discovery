@@ -1,4 +1,4 @@
-# notebooklm-pipeline
+# discovery — NotebookLM pipeline
 
 **Дослідження в Google NotebookLM однією командою.** Агент (Claude Code або інший) лише формує команду, а скрипт виконує роботу сам:
 1. завантажує теку, файли, URL чи Google Drive у блокнот;
@@ -31,8 +31,8 @@
 ## Встановлення
 ### Claude Code (рекомендовано)
 ```
-/plugin marketplace add teraxis/notebooklm-pipeline
-/plugin install discovery@notebooklm-pipeline
+/plugin marketplace add teraxis/discovery
+/plugin install discovery@discovery
 ```
 Потім напишіть агенту: «Налаштуй discovery». Він виконає [AGENT_SETUP.md](AGENT_SETUP.md):
 1. встановить залежності;
@@ -40,11 +40,11 @@
 3. перевірить усе командою `nlm doctor`.
 
 ### Інші агенти (Codex, Gemini CLI, Cursor…)
-Скажіть агенту: «Встанови https://github.com/teraxis/notebooklm-pipeline і налаштуй за AGENT_SETUP.md». Інструкції для агента лежать в [AGENTS.md](AGENTS.md).
+Скажіть агенту: «Встанови https://github.com/teraxis/discovery і налаштуй за AGENT_SETUP.md». Інструкції для агента лежать в [AGENTS.md](AGENTS.md).
 
 ### Вручну
 ```
-git clone https://github.com/teraxis/notebooklm-pipeline
+git clone https://github.com/teraxis/discovery
 powershell -ExecutionPolicy Bypass -File notebooklm-pipeline\skills\discovery\install.ps1   # або: sh .../install.sh
 notebooklm-pipeline\skills\discovery\nlm.cmd login
 notebooklm-pipeline\skills\discovery\nlm.cmd doctor
