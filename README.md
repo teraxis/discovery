@@ -45,9 +45,9 @@
 ### Вручну
 ```
 git clone https://github.com/teraxis/discovery
-powershell -ExecutionPolicy Bypass -File notebooklm-pipeline\skills\discovery\install.ps1   # або: sh .../install.sh
-notebooklm-pipeline\skills\discovery\nlm.cmd login
-notebooklm-pipeline\skills\discovery\nlm.cmd doctor
+powershell -ExecutionPolicy Bypass -File discovery\skills\discovery\install.ps1   # або: sh discovery/skills/discovery/install.sh
+discovery\skills\discovery\nlm.cmd login
+discovery\skills\discovery\nlm.cmd doctor
 ```
 
 ## Використання
