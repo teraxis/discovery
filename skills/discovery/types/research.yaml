@@ -1,0 +1,16 @@
+description: Глибоке дослідження в інтернеті (Deep Research NotebookLM) за запитом, імпорт знайдених джерел і підсумковий звіт → DOCX
+params:
+  ЗАПИТ: {required: true, help: "що дослідити"}
+title: "Дослідження: {{ЗАПИТ}}"
+create: true
+chat:
+  response_length: longer
+tasks:
+  - research: {query: "{{ЗАПИТ}}", mode: deep, from: web, import: cited}
+  - ask: >-
+      На основі всіх джерел підготуй аналітичний звіт за запитом «{{ЗАПИТ}}»: головні висновки,
+      аргументи «за» і «проти», цифри й дати, ступінь надійності джерел, відкриті питання.
+    title: Аналітичний звіт
+output:
+  format: docx
+  citations: list

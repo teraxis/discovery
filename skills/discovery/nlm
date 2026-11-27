@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+NLM_HOME="${NLM_HOME:-$HOME/.nlm-pipeline}"
+DIR="$(cd "$(dirname "$0")" && pwd)"
+if [ ! -x "$NLM_HOME/.venv/bin/python" ]; then
+  echo "✗ Не встановлено. Запустіть: sh \"$DIR/install.sh\""; exit 9
+fi
+exec "$NLM_HOME/.venv/bin/python" -X utf8 "$DIR/scripts/nlm.py" "$@"

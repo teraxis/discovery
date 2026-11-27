@@ -1,0 +1,13 @@
+{
+  "name": "notebooklm-pipeline",
+  "owner": { "name": "teraxis" },
+  "metadata": { "description": "Дослідження в Google NotebookLM однією командою" },
+  "plugins": [
+    {
+      "name": "discovery",
+      "source": "./",
+      "description": "Скіл /discovery: NotebookLM — джерела, промпти, типи досліджень, DOCX-результат",
+      "version": "0.1.0"
+    }
+  ]
+}

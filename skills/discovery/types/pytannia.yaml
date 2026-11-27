@@ -1,0 +1,12 @@
+description: Відповіді на перелік питань до матеріалів (файл з питаннями — по одному на рядок або розділені рядком ---) → DOCX
+params:
+  ПИТАННЯ: {required: true, help: "шлях до .txt/.md з питаннями"}
+title: "Відповіді на питання"
+create: true
+chat:
+  response_length: longer
+tasks:
+  - ask_file: "{{ПИТАННЯ}}"
+output:
+  format: docx
+  citations: list

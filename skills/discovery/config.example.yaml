@@ -1,0 +1,12 @@
+# Копіюється в ~/.nlm-pipeline/config.yaml під час встановлення. Усі поля необов'язкові.
+
+# Профіль notebooklm-py — якщо хочете тримати кілька Google-акаунтів (nlm login --profile назва).
+profile: null
+
+# Куди класти результати, якщо в команді не вказано --out
+output_dir: null
+
+# Де лежать ваші власні промпти й типи досліджень (за замовчуванням ~/.nlm-pipeline/prompts і /types).
+# Зручно вказати теку в OneDrive/Google Drive, щоб вони були на всіх ваших ПК.
+prompts_dir: null
+types_dir: null

@@ -1,0 +1,26 @@
+# Шаблон власного типу дослідження. Створіть копію: nlm types add "Моя назва"
+# Запуск: nlm start <назва> --materials ТЕКА --out ТЕКА --var "КЛЮЧ=значення"
+description: Що робить цей тип (один рядок — його бачить агент у nlm types)
+params:                      # змінні {{КЛЮЧ}}; required — агент спитає, якщо не задано
+  ТЕМА: {required: true, help: "про що дослідження"}
+title: "Дослідження: {{ТЕМА}}"
+notebook: "{{ТЕМА}}"         # назва блокнота (наявний — дозавантажить, новий — створить)
+create: true
+# sources:                   # постійні джерела, додатково до --materials
+#   - url: https://example.com
+chat:
+  persona: null              # назва промпту з бібліотеки (nlm prompts) для «Налаштування чату», ≤10 000 символів
+  response_length: longer    # default | longer | shorter
+tasks:                       # виконуються по черзі
+  - ask: "Твоє питання про {{ТЕМА}} або назва промпту з бібліотеки"
+    title: Розділ у результаті
+    # continue: {max: 10, prompt: "Продовжуй…", until: "регулярний вираз ознаки завершення"}
+  # - ask_file: шлях\до\питань.txt
+  # - research: {query: "{{ТЕМА}}", mode: deep, from: web, import: cited}
+  # - explore: {steps: 5}      # NotebookLM сам ставить наступні питання
+  # - report: {prompt: назва_промпту, format: custom}
+output:
+  format: docx               # docx | md | json
+  citations: list            # list | quotes | none
+  # style: dossier           # заголовок-ПІБ, наскрізна нумерація посилань
+  # template: шлях\до\бланка.docx
