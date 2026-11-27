@@ -1,5 +1,9 @@
 # discovery — NotebookLM pipeline
 
+> **Що це.** Скіл і набір скриптів, з якими Claude (Claude Code) або інший ШІ-агент (Codex, Gemini CLI, Cursor тощо) повністю керує вашим Google NotebookLM: створює блокноти, завантажує джерела, налаштовує чат, ставить питання, запускає Deep Research і збирає результати у DOCX. Ви кажете агенту, що дослідити і на яких матеріалах, а він проводить дослідження в NotebookLM за вас.
+>
+> *A skill + scripts that let Claude or any other AI agent drive Google NotebookLM end-to-end for research: notebooks, sources, chat settings, questions, Deep Research, DOCX reports.*
+
 **Дослідження в Google NotebookLM однією командою.** Агент (Claude Code або інший) лише формує команду, а скрипт виконує роботу сам:
 1. завантажує теку, файли, URL чи Google Drive у блокнот;
 2. задає промпт у «Налаштування чату»;
@@ -8,8 +12,6 @@
 5. зберігає результат у DOCX з посиланнями на джерела.
 
 Агент отримує лише підсумок у кілька рядків, тож токенів витрачається мінімум.
-
-> One-command research pipelines for Google NotebookLM, driven by an AI agent (Claude Code skill / plugin). UI and prompts are in Ukrainian.
 
 ## Можливості
 - **Джерела:**
